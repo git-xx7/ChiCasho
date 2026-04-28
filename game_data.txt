@@ -1,201 +1,194 @@
-# Chicasho Game Data Configuration
+# Chicasho Game Data
 
 [CONFIG]
-SCREEN_WIDTH=800
-SCREEN_HEIGHT=600
-MAP_PATH=map.png
+SCREEN_WIDTH=1100
+SCREEN_HEIGHT=900
+MAP_PATH=map.gif
+START_CASH=1100
+START_STABILITY=45
 MAX_TURNS=10
-START_CASH=500
-START_STABILITY=50
 
 [WIN_RULES]
+cash_min=-50
+stability_min=5
 net_worth_goal=2250
 
-# Downtown - Chicago's Financial Core
 [LOCATION]
-name=Downtown
-description=You're in the heart of Chicago's financial district.
-x=100
-y=100
+name=Far North Side
+x=-25
+y=320
+description=Your neighbor Mr. Kowalski is moving out after 30 years. He offers you $150 cash to help load the truck this Saturday. Its your only free weekend this month.
 
 [OPTION]
-label=Invest in tech stocks
-result=You caught an emerging tech boom! Smart move.
+label=Take the gig
 cash=150
-score=40
-stability=-5
+score=1
+stability=-2
+result=Four hours of work $150 richer. Mr. Kowalski even throws in a vintage lamp.
 
 [OPTION]
-label=Buy stable bonds
-result=Steady returns, but missing out on growth.
-cash=50
-score=10
-stability=15
+label=Stay home
+cash=0
+score=0
+stability=2
+result=You slept in and got some rest but the extra cash would have helped with rent.
 
-# Millennium Park
 [LOCATION]
-name=Millennium Park
-description=Chicago's most iconic public space.
-x=200
-y=150
+name=Northwest Side
+x=-150
+y=165
+description=Milwaukee Ave is having a one-day blowout sale. Your phone is blowing up with deals. Everything feels urgent. Your credit card is right there in your pocket.
 
 [OPTION]
-label=Start a food truck business
-result=Business is booming! Tourists love your food.
-cash=200
-score=50
-stability=-10
+label=Shop the sale
+cash=-120
+score=0
+stability=-3
+result=Three bags zero regret in the moment. Pure regret by Sunday night.
 
 [OPTION]
-label=Work as a tour guide
-result=Steady income with regular hours.
-cash=80
-score=20
-stability=10
+label=Skip it
+cash=30
+score=1
+stability=3
+result=You deleted the apps made coffee at home and moved $30 into savings instead.
 
-# Navy Pier
 [LOCATION]
-name=Navy Pier
-description=The entertainment hub along Lake Michigan.
-x=150
-y=250
+name=North Side
+x=95
+y=165
+description=A Lincoln Park rooftop networking event is happening tonight. Ticket is $35. Three people you follow on LinkedIn just posted they are going. Your couch is also very comfortable.
 
 [OPTION]
-label=Invest in real estate
-result=Property values are rising fast!
-cash=300
-score=60
-stability=-15
+label=Go network
+cash=-35
+score=4
+stability=1
+result=You paid the $35 exchanged business cards and one contact emails you a freelance lead by Tuesday.
 
 [OPTION]
-label=Save your money
-result=Building a safety net is wise.
-cash=20
+label=Skip out
+cash=0
+score=0
+stability=2
+result=You stayed in and got a quiet night but the opportunity passed.
+
+[LOCATION]
+name=Central
+x=208
+y=8
+description=Your manager texts you at 6pm asking if you can cover a downtown shift Saturday morning. It pays time and a half. You already had loose plans to sleep in.
+
+[OPTION]
+label=Take overtime
+cash=160
+score=1
+stability=-3
+result=Alarm at 7am was brutal. The extra $160 in your account felt great by noon.
+
+[OPTION]
+label=Skip it
+cash=0
+score=0
+stability=2
+result=You slept until noon and caught your breath but you passed on a solid paycheck.
+
+[LOCATION]
+name=West Side
+x=-58
+y=18
+description=Your cousin wants you to go in on a food cart business together. Startup supplies cost $90. She has done the math. The West Side street market runs every weekend through summer.
+
+[OPTION]
+label=Buy supplies
+cash=-90
+score=4
+stability=1
+result=You spent $90 on supplies. The first weekend you broke even and by the second weekend the hustle looked real.
+
+[OPTION]
+label=Blow the cash
+cash=-60
+score=-1
+stability=-1
+result=You skipped the investment and spent the money on a night out you barely remember.
+
+[LOCATION]
+name=Southwest Side
+x=-35
+y=-152
+description=Your younger sister calls crying. Her car broke down and she needs $200. You have rent due in ten days. She says she will pay you back. She always says that.
+
+[OPTION]
+label=Help wisely
+cash=-100
+score=2
+stability=2
+result=You sent what you could afford and set a clear boundary. She appreciated the honesty.
+
+[OPTION]
+label=Send it all
+cash=-200
+score=1
+stability=-4
+result=You gave her the full $200 and then spent the next week panicking about rent.
+
+[LOCATION]
+name=South Side
+x=240
+y=-82
+description=A medical bill from three months ago just hit collections. The agency offers a settlement if you pay $80 today. You can also ignore it and hope it goes away. It will not go away.
+
+[OPTION]
+label=Pay now
+cash=-80
+score=1
+stability=3
+result=Painful but done. Your credit score quietly thanks you.
+
+[OPTION]
+label=Delay it
+cash=0
+score=-2
+stability=-6
+result=You kept the cash for now but the fees and stress got worse fast.
+
+[LOCATION]
+name=Far Southwest Side
+x=58
+y=-288
+description=Tax season arrived like it does every year somehow still a surprise. You made side income this year. The IRS knows. You have receipts in a shoebox and one friend who is an accountant.
+
+[OPTION]
+label=Find Deductions
+cash=-40
+score=2
+stability=3
+result=You spent a little time and money getting organized and your accountant friend helped you avoid bigger penalties.
+
+[OPTION]
+label=Ignore taxes
+cash=0
+score=-2
+stability=-7
+result=You filed nothing. The penalty notice arrived six weeks later. It was not friendly.
+
+[LOCATION]
+name=Far Southeast Side
+x=250
+y=-292
+description=A retired CFO at your gym offers you an hour of free financial mentorship that could change how you think about money forever.
+
+[OPTION]
+label=Take mentorship
+cash=0
 score=5
-stability=20
-
-# Museum Campus
-[LOCATION]
-name=Museum Campus
-description=World-class museums and cultural institutions.
-x=100
-y=300
+stability=4
+result=She drew a diagram on a napkin that rewired your entire relationship with money.
 
 [OPTION]
-label=Pursue art career
-result=Your art is gaining recognition!
-cash=100
-score=80
-stability=-5
-
-[OPTION]
-label=Get a corporate job
-result=Reliable salary with benefits.
-cash=120
-score=20
-stability=15
-
-# Wicker Park
-[LOCATION]
-name=Wicker Park
-description=Chicago's vibrant arts and culture neighborhood.
-x=50
-y=200
-
-[OPTION]
-label=Open a trendy bar
-result=The hottest spot in the neighborhood!
-cash=250
-score=45
-stability=-12
-
-[OPTION]
-label=Freelance creative work
-result=Flexible work but inconsistent income.
-cash=70
-score=30
-stability=5
-
-# Pilsen
-[LOCATION]
-name=Pilsen
-description=Chicago's historic arts and cultural district.
-x=80
-y=150
-
-[OPTION]
-label=Start manufacturing business
-result=Strong demand for your products!
-cash=200
-score=55
-stability=-8
-
-[OPTION]
-label=Work in community development
-result=Helping the neighborhood grow steadily.
-cash=90
-score=25
-stability=12
-
-# Wrigleyville
-[LOCATION]
-name=Wrigleyville
-description=Home of the Chicago Cubs and Wrigley Field.
-x=200
-y=280
-
-[OPTION]
-label=Run a sports bar
-result=Game days bring great business!
-cash=180
-score=40
-stability=-5
-
-[OPTION]
-label=Work in sports management
-result=Stable career in professional sports.
-cash=110
-score=30
-stability=10
-
-# Logan Square
-[LOCATION]
-name=Logan Square
-description=Trendy neighborhood with galleries and coffee shops.
-x=120
-y=220
-
-[OPTION]
-label=Open a startup
-result=You secured venture funding!
-cash=400
-score=100
-stability=-20
-
-[OPTION]
-label=Work at an established company
-result=Good salary and benefits.
-cash=130
-score=35
-stability=15
-
-# South Loop
-[LOCATION]
-name=South Loop
-description=Chicago's rapidly developing riverside community.
-x=180
-y=100
-
-[OPTION]
-label=Flip buildings
-result=Real estate profits rolling in!
-cash=350
-score=70
-stability=-15
-
-[OPTION]
-label=Rent and invest slowly
-result=Building wealth the steady way.
-cash=60
-score=15
-stability=18
+label=Waste the day
+cash=0
+score=-1
+stability=-2
+result=You cancelled last minute spent the day watching TV and the opportunity never came back.
