@@ -1,0 +1,201 @@
+# Chicasho Game Data Configuration
+
+[CONFIG]
+SCREEN_WIDTH=800
+SCREEN_HEIGHT=600
+MAP_PATH=map.png
+MAX_TURNS=10
+START_CASH=500
+START_STABILITY=50
+
+[WIN_RULES]
+net_worth_goal=2250
+
+# Downtown - Chicago's Financial Core
+[LOCATION]
+name=Downtown
+description=You're in the heart of Chicago's financial district.
+x=100
+y=100
+
+[OPTION]
+label=Invest in tech stocks
+result=You caught an emerging tech boom! Smart move.
+cash=150
+score=40
+stability=-5
+
+[OPTION]
+label=Buy stable bonds
+result=Steady returns, but missing out on growth.
+cash=50
+score=10
+stability=15
+
+# Millennium Park
+[LOCATION]
+name=Millennium Park
+description=Chicago's most iconic public space.
+x=200
+y=150
+
+[OPTION]
+label=Start a food truck business
+result=Business is booming! Tourists love your food.
+cash=200
+score=50
+stability=-10
+
+[OPTION]
+label=Work as a tour guide
+result=Steady income with regular hours.
+cash=80
+score=20
+stability=10
+
+# Navy Pier
+[LOCATION]
+name=Navy Pier
+description=The entertainment hub along Lake Michigan.
+x=150
+y=250
+
+[OPTION]
+label=Invest in real estate
+result=Property values are rising fast!
+cash=300
+score=60
+stability=-15
+
+[OPTION]
+label=Save your money
+result=Building a safety net is wise.
+cash=20
+score=5
+stability=20
+
+# Museum Campus
+[LOCATION]
+name=Museum Campus
+description=World-class museums and cultural institutions.
+x=100
+y=300
+
+[OPTION]
+label=Pursue art career
+result=Your art is gaining recognition!
+cash=100
+score=80
+stability=-5
+
+[OPTION]
+label=Get a corporate job
+result=Reliable salary with benefits.
+cash=120
+score=20
+stability=15
+
+# Wicker Park
+[LOCATION]
+name=Wicker Park
+description=Chicago's vibrant arts and culture neighborhood.
+x=50
+y=200
+
+[OPTION]
+label=Open a trendy bar
+result=The hottest spot in the neighborhood!
+cash=250
+score=45
+stability=-12
+
+[OPTION]
+label=Freelance creative work
+result=Flexible work but inconsistent income.
+cash=70
+score=30
+stability=5
+
+# Pilsen
+[LOCATION]
+name=Pilsen
+description=Chicago's historic arts and cultural district.
+x=80
+y=150
+
+[OPTION]
+label=Start manufacturing business
+result=Strong demand for your products!
+cash=200
+score=55
+stability=-8
+
+[OPTION]
+label=Work in community development
+result=Helping the neighborhood grow steadily.
+cash=90
+score=25
+stability=12
+
+# Wrigleyville
+[LOCATION]
+name=Wrigleyville
+description=Home of the Chicago Cubs and Wrigley Field.
+x=200
+y=280
+
+[OPTION]
+label=Run a sports bar
+result=Game days bring great business!
+cash=180
+score=40
+stability=-5
+
+[OPTION]
+label=Work in sports management
+result=Stable career in professional sports.
+cash=110
+score=30
+stability=10
+
+# Logan Square
+[LOCATION]
+name=Logan Square
+description=Trendy neighborhood with galleries and coffee shops.
+x=120
+y=220
+
+[OPTION]
+label=Open a startup
+result=You secured venture funding!
+cash=400
+score=100
+stability=-20
+
+[OPTION]
+label=Work at an established company
+result=Good salary and benefits.
+cash=130
+score=35
+stability=15
+
+# South Loop
+[LOCATION]
+name=South Loop
+description=Chicago's rapidly developing riverside community.
+x=180
+y=100
+
+[OPTION]
+label=Flip buildings
+result=Real estate profits rolling in!
+cash=350
+score=70
+stability=-15
+
+[OPTION]
+label=Rent and invest slowly
+result=Building wealth the steady way.
+cash=60
+score=15
+stability=18
